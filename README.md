@@ -28,4 +28,4 @@
 
 ### 📫 Open to
 
-Data Engineer and Analytics Engineer roles in healthcare, pharma and financial services.
+Data Engineer roles in healthcare, pharma and financial services.

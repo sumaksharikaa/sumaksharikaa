@@ -68,13 +68,22 @@ Each one runs end to end on synthetic data, with tests and CI.
 | [Smart-Meter Pipeline (Utilities)](https://github.com/sumaksharikaa/smart-meter-airflow-pipeline) | Daily meter-data pipeline: file controls, validation and gap-filling, outage reliability scores, write-audit-publish | Airflow 3 · PySpark · Hive | ![CI](https://github.com/sumaksharikaa/smart-meter-airflow-pipeline/actions/workflows/ci.yml/badge.svg) |
 | [Telecom Kafka Streaming](https://github.com/sumaksharikaa/telecom-kafka-streaming-pipeline) | Network events streamed from Kafka: dead-letter queue, dedup, real-time cell KPIs, SCD2 subscriber changes, reconciliation | Kafka · Spark Streaming · Hive | ![CI](https://github.com/sumaksharikaa/telecom-kafka-streaming-pipeline/actions/workflows/ci.yml/badge.svg) |
 
+### 🏥 Healthcare data engineering
+
+ETL pipelines, warehouses and data-quality frameworks for pharmacy and claims data.
+
+| Project | What it does | Stack |
+|---|---|---|
+| [Pharmacy Analytics dbt](https://github.com/sumaksharikaa/pharmacy-dbt-analytics) | Layered staging → intermediate → mart models with schema tests, singular tests and macros | dbt · Snowflake · SQL |
+| [Specialty Pharmacy Claims](https://github.com/sumaksharikaa/sp-claims-analytics) | End-to-end claims ETL into a PostgreSQL warehouse, plus an executive dashboard | PostgreSQL · Python ETL · Streamlit |
+| [Healthcare DQ & Governance](https://github.com/sumaksharikaa/healthcare-dq-governance) | Configurable data-quality rules engine with audit trail and downstream impact | Python · PostgreSQL |
+| [Drug Utilization & Formulary](https://github.com/sumaksharikaa/drug-utilization-analytics) | Drug utilization and formulary analytics with prior-authorization tracking | MySQL · Python ETL · Streamlit |
+| [Pharmacy Supply Chain](https://github.com/sumaksharikaa/pharmacy-supply-chain) | Inventory, supplier performance, stockouts and reorder alerts | PostgreSQL · Python ETL · Streamlit |
+
 ### 📊 Analytics & ML projects
 
 | Project | What it does | Stack |
 |---|---|---|
-| [Pharmacy Analytics dbt](https://github.com/sumaksharikaa/pharmacy-dbt-analytics) | Layered staging → intermediate → mart models with tests and macros | dbt · Snowflake · SQL |
-| [Specialty Pharmacy Claims](https://github.com/sumaksharikaa/sp-claims-analytics) | End-to-end claims ETL into a PostgreSQL warehouse, plus an executive dashboard | PostgreSQL · Python · Streamlit |
-| [Healthcare DQ & Governance](https://github.com/sumaksharikaa/healthcare-dq-governance) | Configurable data-quality rules engine with audit trail and downstream impact | Python · PostgreSQL |
 | [Readmission Risk Predictor](https://github.com/sumaksharikaa/pharmacy-readmission-risk) | 30-day readmission model using the Charlson Comorbidity Index | XGBoost · MLflow |
 | [Financial Risk Dashboard](https://github.com/sumaksharikaa/financial-risk-dashboard) | Credit-risk analysis of a $34B, 2.26M-loan portfolio · [live demo](https://financial-risk-dashboard-ovjmqv7edtxfdeczx8zctv.streamlit.app) | SQL · Python · Streamlit |
 | [Earnings Call NLP](https://github.com/sumaksharikaa/earnings-call-nlp) | FinBERT sentiment on earnings-call transcripts · [live demo](https://earnings-call-nlp-hpvrwqwv6rrtxknzwt2seb.streamlit.app) | Transformers · Streamlit |
